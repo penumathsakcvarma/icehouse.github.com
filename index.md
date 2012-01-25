@@ -13,7 +13,7 @@ För att kunna visa dynamiska annonser måste vi ha en produktfeed (även kallad
 prisfil) med alla produkter i antingen XML- eller CSV-format.  Följande
 tabell visar vilken information vi kan ta emot, obligatoriska fält är markerade
 med \*. Ni kan testa er produktfeed med vår valideringstjänst på
-[http://http://dumbo.releware.net/price_file/validator](http://dumbo.releware.net/price_file/validator).
+[http://dumbo.releware.net/price_file/validator](http://dumbo.releware.net/price_file/validator).
 
 <table class="hor-minimalist-b">
   <tr>
