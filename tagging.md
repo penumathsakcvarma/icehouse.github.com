@@ -53,7 +53,7 @@ Med API:t kan du
 
   (function() {
     var rw = document.createElement('script'); rw.type = 'text/javascript'; rw.async = true;
-    rw.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.releware.net/rw.js';
+    rw.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.releware.net/js/v1/rwa.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(rw, s);
   })();
 </script>
