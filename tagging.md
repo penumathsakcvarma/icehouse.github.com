@@ -28,27 +28,27 @@ Med API:t kan du
   _rwq.push(['_setScriptID', '123-123-123-123']);
 
   // _setVisitorData
-  _rwq.push(['_setVisitorData', 'gender', 'male']       // TODO: Lagra data i ? dagar
-  _rwq.push(['_setVisitorData', 'forget', 'this', '1']  // Lagra data i en dag
+  _rwq.push(['_setVisitorData', 'gender', 'male']);       // TODO: Lagra data i ? dagar
+  _rwq.push(['_setVisitorData', 'forget', 'this', '1']);  // Lagra data i en dag
 
   // _setVisitorTag
-  _rwq.push(['_setVisitorTag', 'registered-user']          // TODO: Lagra hur länge?
-  _rwq.push(['_setVisitorTag', 'recently-logged-in', '30'] // Sätt en "tag" på en användare, lagra i 30 dagar
+  _rwq.push(['_setVisitorTag', 'registered-user']);          // TODO: Lagra hur länge?
+  _rwq.push(['_setVisitorTag', 'recently-logged-in', '30']); // Sätt en "tag" på en användare, lagra i 30 dagar
 
   // _addItemView
-  _rwq.push(['_addItemView', 'sku85314'])
+  _rwq.push(['_addItemView', 'sku85314']);
 
   // _addConversion
   _rwq.push(['_addConversion',
              'id1234', // Unikt orderID
              '150.00'  // Ordervärde
-            ] 
+            ]);
 
   // Inget ordervärde
-  _rwq.push(['_addConversion', 'id1235'])
+  _rwq.push(['_addConversion', 'id1235']);
 
   // Inget konverterings ID
-  _rwq.push(['_addConversion'])
+  _rwq.push(['_addConversion']);
 
 
   (function() {
