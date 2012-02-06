@@ -6,7 +6,7 @@ Install pygments (python-based syntax highlighting) and jekyll. On my mac I just
     $ bundle install
     $ sudo easy_install Pygments
 
-With homebrew, instead do:
+With homebrew python, instead do:
 
     $ bundle install
     $ easy_install Pygments
@@ -16,7 +16,7 @@ With homebrew, instead do:
 Usage
 -----
 
-    $ jekyll --server --safe --pygments
+    $ jekyll --server --safe --pygments --auto
     $ open http://localhost:4000
 
 Deployment
