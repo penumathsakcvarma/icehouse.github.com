@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Prisfil / produktfeed
 layout: wikistyle
 ---
 
@@ -11,9 +11,10 @@ Produktfeed
 
 För att kunna visa dynamiska annonser måste vi ha en produktfeed (även kallad
 prisfil) med alla produkter i antingen XML- eller CSV-format.  Följande
-tabell visar vilken information vi kan ta emot. Obligatoriska fält är markerade
-med \*. Ni kan testa er produktfeed med vår valideringstjänst på
+tabell visar vilken information vi kan ta emot. Ni kan testa er produktfeed med vår valideringstjänst på
 [http://dumbo.releware.net/price_file/validator](http://dumbo.releware.net/price_file/validator).
+
+### Obligatoriska fält
 
 <table class="hor-minimalist-b">
   <tr>
@@ -21,7 +22,7 @@ med \*. Ni kan testa er produktfeed med vår valideringstjänst på
     <th>Beskrivning</th>
   </tr>
   <tr>
-    <td class="field">Produkt-id*</td>
+    <td class="field">Produkt-id</td>
     <td>Måste vara samma som rapporteras av observationsskripten i butiken.
         Måste vara unikt, används som id i vår databas. Ofta samma som SKU/artikelnummer..</td>
   </tr>
@@ -47,6 +48,15 @@ med \*. Ni kan testa er produktfeed med vår valideringstjänst på
     <td class="field">Ordinarie pris*</td>
     <td>Kan hämtas från samma fält som nuvarande pris.</td>
   </tr>
+</table>
+
+### Frivilliga fält
+
+<table class="hor-minimalist-b">
+  <tr>
+    <th>Fält</th>
+    <th>Beskrivning</th>
+  </tr>
   <tr>
     <td class="field">SKU</td>
     <td>Också känt som artikelnummer. Får gärna vara unikt, men måste inte.
@@ -59,8 +69,8 @@ med \*. Ni kan testa er produktfeed med vår valideringstjänst på
   </tr>
   <tr>
     <td class="field">Lagerstatus</td>
-    <td>Varor som finns i lager bör markeras med `Y, Yes, 1, T, True` eller antal varor i lager.
-        Varor som inte finns i lager bör markeras med `N, No, 0, F, False` eller liknande.
+    <td>Varor som finns i lager bör markeras med <code>Y, Yes, 1, T, True</code> eller antal varor i lager.
+        Varor som inte finns i lager bör markeras med <code>N, No, 0, F, False</code> eller liknande.
         Om lagerstatus saknas antar vi att alla varor finns i lager.</td>
   </tr>
 </table>
