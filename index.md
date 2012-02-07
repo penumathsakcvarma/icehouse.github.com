@@ -106,5 +106,5 @@ tabell visar vilken information vi kan ta emot. Ni kan testa er produktfeed med 
 #### Exempel
 <pre>
     id|name|brand|product_url|image_url|price
-    10010|40"" TV &amp; förstärkare|Panasonic|http://webplats.se/10010|http://webplats.se/images/10010.jpg|400.00
+    10010|"40"" TV &amp; förstärkare"|Panasonic|http://webplats.se/10010|http://webplats.se/images/10010.jpg|400.00
 </pre>
