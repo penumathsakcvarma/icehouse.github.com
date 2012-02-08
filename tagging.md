@@ -23,8 +23,8 @@ Med API:t kan du
 <script type="text/javascript">
   var _rwq = _rwq || [];
 
-  // För att bibehålla bakåtkompatibilitet så har vi <account>-<domännamn>
-  _rwq.push(['_setClientID', 'PellesDatorer-pellesdatorer.se']);
+  // För att bibehålla bakåtkompatibilitet så har vi <account>_<domännamn>
+  _rwq.push(['_setClientID', 'PellesDatorer_pellesdatorer.se']);
   _rwq.push(['_setScriptID', '123-123-123-123']);
 
   // _setVisitorData
