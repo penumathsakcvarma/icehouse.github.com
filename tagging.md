@@ -40,8 +40,9 @@ Med API:t kan du
 
   // _addConversion
   _rwq.push(['_addConversion',
-             'id1234', // Unikt orderID
-             '150.00'  // Ordervärde
+             'id1234',  // Unikt orderID    (valfritt, men rekommenderat)
+             '150.00',  // Ordervärde       (valfritt)
+             'purchase' // Konverteringstyp (valfritt)
             ]);
 
   // Inget ordervärde
