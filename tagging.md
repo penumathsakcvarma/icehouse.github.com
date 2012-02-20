@@ -36,7 +36,7 @@ Med API:t kan du
   _rwq.push(['_setVisitorTag', 'recently-logged-in', '30']); // Sätt en "tag" på en användare, lagra i 30 dagar
 
   // _addItemView
-  _rwq.push(['_addItemView', 'sku85314']);
+  _rwq.push(['_addItemView', 'ref_1234']);
 
   // _addConversion
   _rwq.push(['_addConversion',
