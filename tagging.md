@@ -40,16 +40,13 @@ Med API:t kan du
 
   // _addConversion
   _rwq.push(['_addConversion',
-             'id1234',  // Unikt orderID    (valfritt, men rekommenderat)
-             '150.00',  // Ordervärde       (valfritt)
-             'purchase' // Konverteringstyp (valfritt)
+             'id1234',                                    // Unikt orderID    (valfritt, men rekommenderat)
+             '150.00',                                    // Ordervärde       (valfritt)
+             'purchase'                                   // Konverteringstyp (valfritt)
             ]);
-
-  // Inget ordervärde
-  _rwq.push(['_addConversion', 'id1235']);
-
-  // Inget konverterings ID
-  _rwq.push(['_addConversion']);
+  _rwq.push(['_addConversion', 'id1235']);                // Inget ordervärde
+  _rwq.push(['_addConversion']);                          // Inget konverterings ID
+  _rwq.push(['_addConversion', null, null, 'purchase']);  // Bara konverteringstyp. "undefined" funkar också.
 
 
   (function() {
