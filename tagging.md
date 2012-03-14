@@ -21,7 +21,7 @@ Man kan märka besökare både med namn (`_setVisitorTag`) och med namn kopplat
 till värde (`_setVisitorData`). Man kan också i båda fallen sätta en livslängd
 på data givet i antal dagar:
 
-{% highlight javascript %}
+{% highlight html %}
 <script type="text/javascript">
   var _rwq = _rwq || [];
 
@@ -55,7 +55,7 @@ För att det skall gå göra personliga annonser så behöver man mäta vilka
 produkter en besökare tittar på. Så på produktens egen sida så får man lägga
 till skriptet med ett mätkommando (`_addItemView`) och produktens unika id:
 
-{% highlight javascript %}
+{% highlight html %}
 <script type="text/javascript">
   var _rwq = _rwq || [];
 
@@ -88,7 +88,7 @@ Det är användbart att mäta antalet konverteringar och totala
 konverteringsvärdet både för retargeting och dynamisk retargeting. Lägg helt
 enkelt in skriptet på landningsidan efter att besökaren har bekräftat köpet:
 
-{% highlight javascript %}
+{% highlight html %}
 <script type="text/javascript">
   var _rwq = _rwq || [];
 
