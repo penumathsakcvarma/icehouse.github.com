@@ -118,7 +118,7 @@ konverteringar dubbelt om sidan av någon anledning skulle laddas om
 
 Om man anger belopp så är det viktigt att siffran har samma
 valuta varje gång. Releware håller bara reda på totala siffran och känner inte
-till valutan själva. Siffran skall anges som en sträng med en punk och två
+till valutan själva. Siffran skall anges som en sträng med en punkt och två
 siffror efter punkten. `'23.00'` är rätt men `'23'` och `'23,00'` är fel.
 
 Om man vill ange belopp men inte order id så kan man sätta `null` i stället
@@ -136,8 +136,8 @@ påverkar det laddningstiden av sidan minimalt.
 * `_setClientID` måsta man alltid ange. Värdet fås av Releware och är en
 kombination av konto- och sajtid-
 
-* `_setScriptID` är valfritt men används för att se att ett viss skript har
-dykt upp rätt i vårt system.
+* `_setScriptID` är valfritt men kan användas för att se att ett visst
+skript har dykt upp rätt i vårt system.
 
 * Alla värden ges som strängar, inklusive siffror som hur länge en märkning
 skall finnas kvar eller vilket belopp konverteringen hade.
