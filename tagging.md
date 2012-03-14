@@ -92,7 +92,6 @@ enkelt in skriptet på landningsidan efter att besökaren har bekräftat köpet:
 <script type="text/javascript">
   var _rwq = _rwq || [];
 
-  // För att bibehålla bakåtkompatibilitet så har vi <account>_<domännamn>
   _rwq.push(['_setClientID', 'PellesDatorer_pellesdatorer.se']);
   _rwq.push(['_setScriptID', '68b7d9a0-6dab-11e1-b0c4-0800200c9a66']);
 
