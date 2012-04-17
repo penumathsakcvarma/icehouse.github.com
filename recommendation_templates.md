@@ -13,7 +13,12 @@ Man kan styra utseendet på Relewares rekommendationer genom att använda mallar
     <b>De som köpte den här produkten köpte också:</b>
   </div>
   <div class="RWItemTemplate">
-    <h4><a href="%product_url%">%title%</a> %current_price%</h4>
+    <h4><a href="%product_url%">%title%</a></h4>
+    <p>%current_price%</p>
+  </div>
+  <div class="RWItemPromotionTemplate">
+    <h4><a href="%product_url%">%title%</a></h4>
+    <p>REA: %current_price% (<del>%normal_price%</del>)</p>
   </div>
   <div class="RWItemSeparator">
     <hr />
@@ -42,13 +47,14 @@ De rekommendations-id:n som normalt används för de olika rekommendationstypern
 Om man vill ha flera rekommendationstyper på en sida så lägger man in flera mallar.
 
 
-## RWItemTemplate
+## Produktmall (RWItemTemplate)
 
 I templaten skall det finnas ett element med klassen `RWItemTemplate`. Det är det blocket som kommer upprepas för varje produkt som rekommenderas:
 
 {% highlight html %}
 <div class="RWItemTemplate">
-  <h4><a href="%product_url%">%title%</a> %current_price%</h4>
+  <h4><a href="%product_url%">%title%</a></h4>
+  <p>%current_price%</p>
 </div>
 {% endhighlight %}
 
@@ -67,7 +73,19 @@ Alla variabler som klipps in är omkodade så de inte påverkar html-strukturen.
 Det finns också en speciell variabel som heter `%ordinal%` vars värde blir vilken i ordningen produkten är. Så den första produkten i listan av rekommendationer får ett `%ordinal%` som är 1, nästa får ett som är 2, osv.
 
 
-## RWItemSeparator
+## Produktmall med reapris (RWItemPromotionTemplate)
+
+Man kan ha en separat mall som bara används om produkten har nedsatt pris. Om det finns en produktmall som är märkt med `RWItemPromotionTemplate` och `%current_price%` skiljer sig från `%normal_price%`, ja då används den mallen istället för `RWItemTemplate`. På så vis kan man exempelvis visa ordinarie pris överstruket vid sidan om det nedsatta priset:
+
+{% highlight html %}
+<div class="RWItemPromotionTemplate">
+  <h4><a href="%product_url%">%title%</a></h4>
+  <p>REA: %current_price% (<del>%normal_price%</del>)</p>
+</div>
+{% endhighlight %}
+
+
+## Kod mellan produkter (RWItemSeparator)
 
 Ibland kan det vara bra att kunna infoga html mellan, men bara mellan, produkterna. Det gör man genom att markera ett element med klassen `RWItemSeparator`:
 
